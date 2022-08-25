@@ -8,6 +8,12 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/index2/index",
+			"style": {
+				"navigationBarTitleText": "uni-app2"
+			}
 		}
 	],
 	"globalStyle": {
