@@ -76,7 +76,7 @@
     "h5" : {
         "router" : {
             "base" : "/my-uniapp-components/",
-            "mode" : "history"
+            "mode" : "hash"
         },
         "unipush" : {
             "enable" : false
