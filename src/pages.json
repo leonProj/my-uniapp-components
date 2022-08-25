@@ -6,13 +6,13 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
 			}
 		},
 		{
-			"path": "pages/index2/index",
+			"path": "pages/hook/useRequest/index",
 			"style": {
-				"navigationBarTitleText": "uni-app2"
+				"navigationBarTitleText": "useRequest"
 			}
 		}
 	],

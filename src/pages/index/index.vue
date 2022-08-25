@@ -1,51 +1,31 @@
 <template>
-  <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
+  <view class="newPage">
     <view>
-      <u-button type="primary" @click="jump">aa</u-button>
+      <view class="example-title-one">通用逻辑</view>
+      <u-cell-group>
+        <u-cell size="large" icon="level" title="useRequest" :isLink="true" @click="onCellClick"></u-cell>
+      </u-cell-group>
     </view>
   </view>
 </template>
 
 <script>
+import {PAGES} from '@/config'
+
 export default {
   data() {
-    return {
-      title: 'Hello'
-    }
+    return {}
   },
   onLoad() {
 
   },
   methods: {
-    jump() {
-      uni.$u.route('pages/index2/index')
+    onCellClick() {
+      uni.$u.route(PAGES.userRequest)
     },
   }
 }
 </script>
 
-<style>
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  height: 200 rpx;
-  width: 200 rpx;
-  margin: 200 rpx auto 50 rpx auto;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36 rpx;
-  color: #8f8f94;
-}
+<style scoped lang="scss">
 </style>
