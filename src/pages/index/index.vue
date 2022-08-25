@@ -2,7 +2,7 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view>
-			<text class="title">{{title}}</text>
+			<u-button type="primary">aa</u-button>
 		</view>
 	</view>
 </template>
