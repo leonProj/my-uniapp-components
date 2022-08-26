@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import {useRequest} from "@/utils/useRequest";
+import {useRequest} from "@/hook/useRequest";
 
 const api = () => {
   return new Promise((resolve) => {
