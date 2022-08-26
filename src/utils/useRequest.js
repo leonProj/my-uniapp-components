@@ -98,9 +98,9 @@ function useRequest(apiFunc, option = {
   }
 
   //  局部刷新
-  const reFresh = () => {
+  const reFresh = (params) => {
     state.isRefresh = true// 加载状态改为加载中
-    execute()
+    execute(params)
   }
 
   // 如果手动触发为false，则直接run查询
