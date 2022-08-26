@@ -32,6 +32,17 @@
 					}
 				}
 			]
+		},
+		{
+			"root": "pages/template/",
+			"pages": [
+				{
+					"path": "standardList/index",
+					"style": {
+						"navigationBarTitleText": "标准下拉列表"
+					}
+				}
+			]
 		}
 	],
 	"globalStyle": {

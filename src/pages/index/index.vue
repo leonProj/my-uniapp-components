@@ -12,6 +12,12 @@
         <u-cell size="large" icon="backspace" title="TlaStateManager" :isLink="true" @click="onCellClick(PAGES.TlaStateManager)"></u-cell>
       </u-cell-group>
     </view>
+    <view>
+      <view class="example-title-one">模板页面</view>
+      <u-cell-group>
+        <u-cell size="large" icon="order" title="标准下拉列表" :isLink="true" @click="onCellClick(PAGES.standardList)"></u-cell>
+      </u-cell-group>
+    </view>
   </view>
 </template>
 
