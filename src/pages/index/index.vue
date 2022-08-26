@@ -3,7 +3,13 @@
     <view>
       <view class="example-title-one">通用逻辑</view>
       <u-cell-group>
-        <u-cell size="large" icon="level" title="useRequest" :isLink="true" @click="onCellClick"></u-cell>
+        <u-cell size="large" icon="level" title="useRequest" :isLink="true" @click="onCellClick(PAGES.userRequest)"></u-cell>
+      </u-cell-group>
+    </view>
+    <view>
+      <view class="example-title-one">hook组件</view>
+      <u-cell-group>
+        <u-cell size="large" icon="backspace" title="TlaStateManager" :isLink="true" @click="onCellClick(PAGES.TlaStateManager)"></u-cell>
       </u-cell-group>
     </view>
   </view>
@@ -14,14 +20,15 @@ import {PAGES} from '@/config'
 
 export default {
   data() {
+    this.PAGES = PAGES
     return {}
   },
   onLoad() {
 
   },
   methods: {
-    onCellClick() {
-      uni.$u.route(PAGES.userRequest)
+    onCellClick(url) {
+      uni.$u.route(url)
     },
   }
 }

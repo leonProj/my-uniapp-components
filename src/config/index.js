@@ -1,3 +1,6 @@
 export const PAGES ={
-    userRequest:'pages/hook/useRequest/index'
+    // hook
+    userRequest:'pages/hook/useRequest/index',
+    // hookComponents
+    TlaStateManager: 'pages/hookComponents/TlaStateManager/index'
 }
