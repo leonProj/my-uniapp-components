@@ -29,6 +29,9 @@ export default {
   components: {
     TlaStateManager
   },
+  onLoad(){
+    this.loadData.run(1)
+  },
   data() {
     return {
       loadData: useRequest(
@@ -36,6 +39,7 @@ export default {
             return api(param)
           },
           {
+            manual:true,
             onError: (e) => {
               uni.showToast({
                 title: e,
